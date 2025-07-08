@@ -6,8 +6,12 @@ on:
 jobs:
   deploy-docs:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 允许推送代码
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 拉取所有历史（避免浅克隆导致推送失败）
       - name: Setup Pnpm
         uses: pnpm/action-setup@v2
         with:
