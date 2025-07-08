@@ -38,7 +38,7 @@ pnpm test
 ## CDN 引入
 
 ```html
-<script src="https://unpkg.com/okayjs/dist/okayjs.iife.js"></script>
+<script src="https://unpkg.com/@lshch/okayjs/dist/okayjs.iife.js"></script>
 <script>
   console.log(Okayjs.add(2, 3));
 </script>

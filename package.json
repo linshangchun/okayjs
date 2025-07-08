@@ -1,6 +1,16 @@
 {
   "name": "@lshch/okayjs",
   "version": "0.0.1",
+  "description": "Okayjs is a very okay JavaScript toolkit.",
+  "keywords": [],
+  "author": "lshch",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linshangchun/okayjs.git"
+  },
+  "homepage": "https://linshangchun.github.io/okayjs",
+  "bugs": "https://github.com/linshangchun/okayjs/issues",
+  "license": "Apache-2.0",
   "type": "module",
   "engines": {
     "node": ">=22"
@@ -21,10 +31,6 @@
     "dev": "pnpm test && pnpm build:dist && pnpm build:docs",
     "prepublishOnly": "pnpm test && pnpm build:dist"
   },
-  "keywords": [],
-  "author": "okay",
-  "license": "Apache-2.0",
-  "description": "Okayjs is a very okay JavaScript toolkit.",
   "devDependencies": {
     "ts-node": "^10.9.2",
     "ts-node-esm": "^0.0.6",
