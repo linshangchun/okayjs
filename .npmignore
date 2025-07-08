@@ -1,0 +1,7 @@
+
+# 忽略所有 source map
+/dist/**/*.map
+
+# 忽略指定构建文件
+/dist/scripts/*
+/dist/test/*

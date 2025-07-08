@@ -1,0 +1,45 @@
+{
+  "name": "okayjs",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "dist/okayjs.cjs.js",
+  "module": "dist/okayjs.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/okayjs.es.js",
+      "require": "./dist/okayjs.cjs.js"
+    }
+  },
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build:dist": "vite build",
+    "build:docs": "typedoc --options typedoc.json",
+    "test": "vitest run -c vitest.config.ts",
+    "dev": "pnpm test && pnpm build:dist && pnpm build:docs",
+    "prepublishOnly": "pnpm test && pnpm build:dist"
+  },
+  "keywords": [],
+  "author": "okay",
+  "license": "Apache-2.0",
+  "description": "Okayjs is a very okay JavaScript toolkit.",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "ts-node-esm": "^0.0.6",
+    "typedoc": "^0.28.7",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.2",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^3.2.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "entryPoints": ["src/index.ts"],
+  "out": "docs",
+  "tsconfig": "tsconfig.json",
+  "excludeExternals": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeInternal": true,
+  "includeVersion": true,
+  "readme": "README.md",
+  "name": "Okayjs",
+  "entryPointStrategy": "expand",
+  "categorizeByGroup": true,
+  "sort": ["source-order"],
+  "plugin": [],
+}

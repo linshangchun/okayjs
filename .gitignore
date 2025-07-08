@@ -1,0 +1,22 @@
+# File: .gitignore
+# Ignore node modules
+node_modules/
+
+# Ignore build outputs in root only
+/dist/
+/docs/
+
+# Vitest cache and coverage
+coverage/
+.vitest/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Editor directories
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
