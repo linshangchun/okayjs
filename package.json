@@ -1,6 +1,6 @@
 {
-  "name": "okayjs",
-  "version": "1.0.0",
+  "name": "@lshch/okayjs",
+  "version": "0.0.1",
   "type": "module",
   "engines": {
     "node": ">=22"
