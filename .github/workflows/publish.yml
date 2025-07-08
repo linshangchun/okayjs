@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-        ref: master  # 强制检出 master 分支（避免 detached HEAD）
+          ref: master  # 强制检出 master 分支（避免 detached HEAD）
       - name: Setup Pnpm
         uses: pnpm/action-setup@v2
         with:
