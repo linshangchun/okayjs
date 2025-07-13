@@ -4,4 +4,5 @@
  * @packageDocumentation
  */
 
-export * from '@/utils'
+export * from '@/utils';
+export type * from '@/types';

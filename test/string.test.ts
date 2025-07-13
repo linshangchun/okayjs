@@ -1,8 +1,8 @@
 import { describe, it, expect } from 'vitest';
-import { toUpper } from '@/utils';
+import { stringToUpper } from '@/utils';
 
 describe('string', () => {
-  it("toUpper('abc') = 'ABC'", () => {
-    expect(toUpper('abc')).toBe('ABC');
+  it("stringToUpper('abc') = 'ABC'", () => {
+    expect(stringToUpper('abc')).toBe('ABC');
   });
 });

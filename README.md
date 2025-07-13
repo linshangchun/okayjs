@@ -40,7 +40,9 @@ pnpm test
 ```html
 <script src="https://unpkg.com/@lshch/okayjs/dist/okayjs.iife.js"></script>
 <script>
-  console.log(Okayjs.add(2, 3));
+  console.log(Okayjs.stringIs('okayjs'));
+  console.log(Okayjs.stringIsNumber('007'));
+  console.log(Okayjs.arrayIs([2]));
 </script>
 ```
 
