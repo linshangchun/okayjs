@@ -7,7 +7,7 @@
   "excludeProtected": true,
   "excludeInternal": true,
   "includeVersion": true,
-  "readme": "README.md",
+  "readme": "none",
   "name": "Okayjs",
   "entryPointStrategy": "expand",
   "categorizeByGroup": true,

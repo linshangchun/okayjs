@@ -1,6 +1,5 @@
 /**
- * 函数模块集合
- *
+ * Okayjs is a very okay JavaScript toolkit.
  * @packageDocumentation
  */
 
