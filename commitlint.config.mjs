@@ -1,7 +1,7 @@
-module.exports = {
+export default {
   extends: ['@commitlint/config-conventional'],
   rules: {
-    'type-enum': [2, 'always', ['feat', 'fix', 'docs', 'refactor', 'test', 'chore']]
+    'type-enum': [2, 'always', ['feat', 'fix', 'docs', 'refactor', 'test', 'chore', 'pkg']]
   }
 };
 
@@ -12,6 +12,7 @@ module.exports = {
 // refactor   🔧 重构代码。不改变功能和行为的代码优化，例如结构调整、重命名、性能优化。
 // test   ✅ 测试相关变更。包括增加、修改、重构测试代码。
 // chore  🧹 其他杂项。如构建脚本修改、依赖更新、CI 配置调整等。一般不会影响产出逻辑。
+// pkg    🎒 自定义的包升级标识。
 
 // 示例提交信息
 // git commit -m "feat: 添加 stringToArray 方法"
@@ -20,3 +21,4 @@ module.exports = {
 // git commit -m "refactor: 重构 string 模块结构，拆分系列方法"
 // git commit -m "test: 增加 stringHas 测试用例"
 // git commit -m "chore: 升级 vitest 到最新版本"
+// git commit -m "pkg: version++"

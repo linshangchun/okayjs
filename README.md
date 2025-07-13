@@ -1,8 +1,10 @@
 # Okayjs
 
+> Okayjs is a very okay JavaScript toolkit.
+
 这是一个基于 Vite 构建的工具包，支持 ES/CJS/UMD/IIFE 模块化、多种发布方式，以及自动化文档、测试与发布流程。
 
-## Vite 工具包项目目录结构（支持模块化、CDN、自动文档生成、自动发布、自动测试）
+## Okayjs 工具包项目目录结构（支持模块化、CDN、自动文档生成、自动发布、自动测试）
 
 ```text
 okayjs/
@@ -13,16 +15,20 @@ okayjs/
 ├── src/
 │   ├── index.ts                // 工具包主入口
 │   └── utils/
-│       ├── math.ts             // 示例工具函数
-│       └── string.ts           // 示例工具函数
+│       ├── index.ts            // 工具模块集中导出口
+│       ├── /array              // array工具模块
+│       ├── /number             // number工具模块
+│       ├── /string             // string工具模块
+│       └── /type               // 常用类型工具模块
 ├── test/                       // 测试用例目录
-│   ├── math.test.ts            // math 函数测试
-│   └── string.test.ts          // string 函数测试
+│   ├── array.test.ts           // array 模块测试
+│   └── string.test.ts          // string 模块测试
 ├── dist/                       // 构建输出目录
 ├── docs/                       // 文档输出目录（gh-pages）
 ├── package.json
 ├── tsconfig.json
 ├── vite.config.ts
+├── ...若干项目配置文件
 └── README.md
 ```
 
