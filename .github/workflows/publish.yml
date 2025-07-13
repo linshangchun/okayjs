@@ -6,8 +6,6 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
-    # ✅ 仅当 tag 的源头是 master 分支才执行（防止误发布）
-    if: startsWith(github.ref, 'refs/tags/v') && github.event.base_ref == 'refs/heads/master'
     steps:
       - uses: actions/checkout@v4
       - name: Setup Pnpm
