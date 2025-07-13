@@ -29,13 +29,37 @@
     "build:docs": "typedoc --options typedoc.json",
     "test": "vitest run -c vitest.config.ts",
     "dev": "pnpm test && pnpm build:dist && pnpm build:docs",
-    "prepublishOnly": "pnpm test && pnpm build:dist"
+    "lint": "eslint src test --ext .ts",
+    "format": "prettier --write .",
+    "prepublishOnly": "pnpm test && pnpm build:dist",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/js": "^9.31.0",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2",
     "ts-node": "^10.9.2",
     "ts-node-esm": "^0.0.6",
     "typedoc": "^0.28.7",
     "typescript": "^5.8.3",
+    "typescript-eslint": "^8.36.0",
     "vite": "^7.0.2",
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^3.2.4"

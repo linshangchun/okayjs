@@ -12,5 +12,5 @@
   "entryPointStrategy": "expand",
   "categorizeByGroup": true,
   "sort": ["source-order"],
-  "plugin": [],
+  "plugin": []
 }
