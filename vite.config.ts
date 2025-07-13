@@ -15,7 +15,10 @@ export default defineConfig({
       formats: ['es', 'cjs', 'umd', 'iife']
     },
     rollupOptions: {
-      output: { exports: 'named' }
+      output: {
+        exports: 'named',
+        compact: true // ✅ 紧凑输出，减少换行和空格
+      }
     }
   },
   plugins: [dts()]
