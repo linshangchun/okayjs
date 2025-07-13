@@ -1,0 +1,16 @@
+# 忽略构建产物
+dist/
+docs/
+
+# 忽略依赖
+node_modules/
+
+# 忽略 git 配置
+.git/
+
+# 忽略 lock 文件等
+pnpm-lock.yaml
+
+# 忽略配置输出
+coverage/
+*.log
