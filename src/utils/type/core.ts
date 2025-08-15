@@ -69,16 +69,6 @@ export function isBigInt(val: unknown): val is bigint {
 }
 
 /**
- * 判断值是否为数组
- * @group type
- * @param val - 任意值
- * @returns 是否为数组
- */
-export function isArray(val: unknown): val is unknown[] {
-  return Array.isArray(val);
-}
-
-/**
  * 判断值是否为函数
  * @group type
  * @param val - 任意值
@@ -101,6 +91,16 @@ export function isFunction<
  */
 export function isPlainObject(val: unknown): val is Record<string, unknown> {
   return Object.prototype.toString.call(val) === '[object Object]';
+}
+
+/**
+ * 判断值是否为数组
+ * @group type
+ * @param val - 任意值
+ * @returns 是否为数组
+ */
+export function isArray(val: unknown): val is unknown[] {
+  return Array.isArray(val);
 }
 
 /**

@@ -1,8 +1,9 @@
 export type TypeOfString =
-  | 'string'
-  | 'number'
+  | 'bigint'
   | 'boolean'
-  | 'symbol'
-  | 'undefined'
+  | 'function'
+  | 'number'
   | 'object'
-  | 'function';
+  | 'string'
+  | 'symbol'
+  | 'undefined';
