@@ -1,6 +1,6 @@
 {
   "name": "@lshch/okayjs",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Okayjs is a very okay JavaScript toolkit.",
   "keywords": [],
   "author": "lshch",
@@ -15,15 +15,21 @@
   "engines": {
     "node": ">=22"
   },
-  "main": "dist/okayjs.cjs.js",
-  "module": "dist/okayjs.es.js",
+  "main": "./dist/okayjs.umd.js",
+  "module": "./dist/okayjs.es.js",
+  "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/okayjs.es.js",
-      "require": "./dist/okayjs.cjs.js"
+      "import": {
+        "types": "./dist/src/index.d.ts",
+        "default": "./dist/okayjs.es.js"
+      },
+      "require": {
+        "types": "./dist/src/index.d.ts",
+        "default": "./dist/okayjs.umd.js"
+      }
     }
   },
-  "types": "dist/src/index.d.ts",
   "scripts": {
     "build:dist": "vite build",
     "build:docs": "typedoc --options typedoc.json",
